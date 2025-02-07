@@ -5,10 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Leptos Counter</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link data-trunk rel="copy-dir" href="/public/images"/>
-    <link data-trunk rel="copy-dir" href="/public/styles"/>
+    
+    
     <link rel="stylesheet" href="/styles/app.css" />
+  <link rel="modulepreload" href="/roadr_specialist_partnership/specialist_partnership-1aa358a600a59abb.js" crossorigin="anonymous" integrity="sha384-wH1IBHyd2eonwPO9NjQlp+22pmacbj/NW6pmDH1ZT9sV6NdS4hENYEvYyshGnfA5"><link rel="preload" href="/roadr_specialist_partnership/specialist_partnership-1aa358a600a59abb_bg.wasm" crossorigin="anonymous" integrity="sha384-xE2soxdGIvfFwWrXA70WpS62xN1ZgeZ1yCxxf07SNye3n/mzoycfr2U1I3ajE8vY" as="fetch" type="application/wasm"></head>
   </head>
-  </head>
-  <body></body>
+  <body>
+<script type="module">
+import init, * as bindings from '/roadr_specialist_partnership/specialist_partnership-1aa358a600a59abb.js';
+const wasm = await init({ module_or_path: '/roadr_specialist_partnership/specialist_partnership-1aa358a600a59abb_bg.wasm' });
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script></body>
 </html>
