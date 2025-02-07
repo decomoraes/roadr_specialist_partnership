@@ -24,7 +24,7 @@ pub fn Header() -> impl IntoView {
             -webkit-backdrop-filter: blur(10px);
             border-bottom: 1px solid rgba(255, 255, 255, 0.3);
             z-index: 1000;">
-                <img src="/images/roadr_black.svg" alt="Exemplo" style="height: 1.75rem" />
+                <img src="/roadr_specialist_partnership/images/roadr_black.svg" alt="Exemplo" style="height: 1.75rem" />
         </FlexBox>
     }
 }
